@@ -24,7 +24,8 @@ header p strong {
    font-size: 18px;
     color: tomato;
 }
-header {
+div.header-left {
+    float:right;
     text-align: right;
 }
 div.top-center-block {
@@ -71,4 +72,7 @@ footer {
 p.footer-right {
     text-align: right;
     font-size: 12px;
+}
+img {
+    border-radius: 8px;
 }
