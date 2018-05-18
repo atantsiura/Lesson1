@@ -1,0 +1,78 @@
+body {
+    background-color: azure;
+    font-family: Calibri, sans-serif;
+    width: 800px;
+    margin-left: 20px;
+}
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 36px;
+}
+h2 {
+    color: darkblue;
+    text-align: center;
+    font-size: 28px;
+    font-style: oblique;
+}
+h3 {
+    margin-left: 80px;
+    font-size: 22px;
+    color: darkslateblue;
+}
+header p strong {
+   font-size: 18px;
+    color: tomato;
+}
+div.header-left {
+    float:right;
+    text-align: right;
+}
+div.top-center-block {
+    text-align: center;
+    font-size: 14;
+    font-family: "Lucida Calligraphy";
+}
+li {
+    background-color: palegoldenrod;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color: grey;
+    padding: 10px;
+    width: 750px
+
+}
+ul {
+    background-color: aqua;
+    border: solid 1px
+    border-color: darkcyan;
+    border-radius: 5px;
+    width: 750px
+}
+
+li:hover {
+    background-color: turquoise;
+
+}
+em {
+    margin-left: 40px;
+    font-size: 18px;
+    color: darkcyan;
+}
+p.bigger {
+    font-size: 18px;
+
+}
+a:link {color: lightseagreen}
+a:visited {color: chartreuse}
+footer {
+    color: gray;
+    font-style: oblique;
+}
+p.footer-right {
+    text-align: right;
+    font-size: 12px;
+}
+img {
+    border-radius: 8px;
+}

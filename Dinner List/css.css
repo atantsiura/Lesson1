@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+    text-align: center;
+    background-color: #3C4146;
+
+
+}
+*{transition: all .1s ease-in;}
+h1 {
+
+    color: #F46B68;
+}
+header {
+    margin: 0;
+    background-color: #4A5056;
+    color: #F46B68;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+header p{
+    font-size: 20px;
+}
+footer {
+    background-color: #4A5056;
+    color: #F46B68;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+main {
+    text-align: left;
+
+}
+table {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+}
+td {
+    width: 600px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    padding: 10px;
+    background-color: #86829A;
+    color: #FFFFFF;
+    font-size: 18px;
+
+}
+tr:nth-child(2n) td{
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid 0px;
+    padding: 10px;
+    background-color: #78758F;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+/* tr:nth-child(2n) */
+td.first label:after {
+    content: "(for the next lesson about CSS)";
+    font-size: 12px;
+}
+td.second label:after {
+    content: "(for more CSS manipulation)";
+    font-size: 12px;
+}
+td.third label:after {
+    content: "(because they are awesome)";
+    font-size: 12px;
+}
+td.fourth label:after {
+    content: "(hmm... they always disappear)";
+    font-size: 12px;
+}
+td.sixs label:after {
+    content: "(for my friends)";
+    font-size: 12px;
+}
+table tr td:hover {
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #FFFFFF;
+    padding: 10px;
+    background-color: #615F74;
+    }
+table tr td:active {
+    width: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #FFFFFF;
+    padding: 10px;
+    background-color: #F46B68;
+}
+input:checked+label {
+    text-decoration-line: line-through;
+}
+
