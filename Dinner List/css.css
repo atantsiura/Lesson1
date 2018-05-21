@@ -1,10 +1,17 @@
-
+*{
+    margin-bottom: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
     text-align: center;
     background-color: #3C4146;
-
+    border: 10px solid #FFFFFF;
+    min-height: 100%;
 
 }
 *{transition: all .1s ease-in;}
@@ -20,14 +27,15 @@ header {
     padding-bottom: 8px;
 }
 header p{
-    font-size: 20px;
+    font-size: 22px;
 }
 footer {
     background-color: #4A5056;
     color: #F46B68;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 1%;
 }
 main {
     text-align: left;
@@ -37,19 +45,27 @@ table {
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     border-collapse: collapse;
 }
 td {
-    width: 600px;
-    margin-left: 200px;
-    margin-right: 200px;
-
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     background-color: #86829A;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 22px;
+
+}
+td label {
+    display: inline-block;
+    width: 100%;
+}
+span {
+    color: #FFFFFF;
+    font-size: 14px;
 
 }
 tr:nth-child(2n) td{
@@ -63,15 +79,15 @@ tr:nth-child(2n) td{
     font-size: 18px;
 }
 /* tr:nth-child(2n) */
-td.first label:after {
-    content: "(for the next lesson about CSS)";
+td span:after {
+    content: ")";
     font-size: 12px;
 }
-td.second label:after {
-    content: "(for more CSS manipulation)";
+td span:before {
+    content: "(";
     font-size: 12px;
 }
-td.third label:after {
+/*td.third label:after {
     content: "(because they are awesome)";
     font-size: 12px;
 }
@@ -82,7 +98,7 @@ td.fourth label:after {
 td.sixs label:after {
     content: "(for my friends)";
     font-size: 12px;
-}
+}*/
 table tr td:hover {
     width: 600px;
     margin-left: 100px;
