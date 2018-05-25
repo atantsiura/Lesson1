@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI','Arial',sans-serif;
+}
+.vertpadding {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: url("../img/bg.jpg");
+    height: 100vh;
+    color: white;
+}
+.logo img{
+    width: 50px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: bold;
+}
+header h1 {
+    padding-top: 21vh;
+}
+header p {
+    padding-top: 60px;
+    padding-bottom: 21vh;
+    font-size: 18px;
+}
+header a.link {
+    padding: 4px;
+    border: 2px solid #ceced0;
+    border-radius: 50%;
+}
+header a.link img {
+    width: 12px;
+}
+.mainpart {
+    background-color: white;
+    color: #464b4f;
+
+}
+/*боковые отступы через width+margin auto*/
+div.texbox {
+    width: 46%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 125px 0 125px;
+    text-align: center;
+}
+.texbox p {
+    font-size: 30px;
+    margin-bottom: 65px;
+}
+
+.mainpart h1 {
+    padding-bottom: 100px;
+    text-align: center;
+}
+/*боковые отступы через padding*/
+footer {
+    padding: 0 25% 125px 25%;
+}
+footer p {
+    display: inline-block;
+}
+div.position {
+    font-size: 0;
+}
+
+p.miniheader {
+    width: 33%;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #464b4f;
+}
+p.footertextblock {
+    width: 33%;
+    font-size: 18px;
+}
+
