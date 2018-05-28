@@ -1,18 +1,45 @@
+/*Шрифты
+font-family: 'Playfair Display', serif;
+ */
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url('../fonts/FuturaPTHeavy.otf');
+/*format('otf')*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+/*format('eot')*/
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     box-sizing: border-box;
-    color: darkslateblue;
     border: 0;
     padding: 0;
     margin: 0;
-    }
-html ,body {
+    font-family: 'Georgia', serif;
+}
+html, body {
     height: 100%;
 }
 body {
     background-color: #464f54;
 }
 div.maincontainer {
-    /*position: relative;*/
+    position: relative;
+    min-height: 100%;
+}
+div.vertline {
+    border-left: 2px solid #e8eced;
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+
+    left: 11%;
+    overflow: hidden;
 }
 div.header {
     display: block;
@@ -23,19 +50,22 @@ div.header {
 
 }
 .title {
+    font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 15px;
-    line-height: 109.3px;
+    letter-spacing: 3px;
+    line-height: 15px;
     color: #777777;
     text-transform: uppercase;
-
 }
 .titlebox {
     background-color: black;
-    padding: 0px 0 36px 62px;
+    padding: 50px 0 50px 62px;
 }
 .titletext {
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
-    border-bottom: 5px solid #303030;
+    line-height: 48px;
+    border-bottom: 3px solid #303030;
     padding: 10px 0 18px;
     color: white;
 }
@@ -44,53 +74,65 @@ div.imageline {
     margin-left: 64px;
     padding: 20px 0 20px 40px;
 }
-.maincontainer {
-
+.imageline a img{
+    height: 30px;
+    margin-right: 20px;
+    opacity: 0.5;
 }
+.imageline a img:hover{
+    opacity: 1;
+}
+
 .marginer {
     width: 88.3%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 17%; /*Узнать как бороться с уменьшением верт паддинга при уменьшении ширины страницы*/
-
+    padding-top: 150px; /*Узнать как бороться с уменьшением верт паддинга при уменьшении ширины страницы*/
 }
 .textbox {
     padding-left: 10%;
-    padding-top: 16.5%;
+    padding-top: 200px;
     background-color: #ffffff;
-
     /*padding-bottom: 40px;*/
-
 }
-div.vertline {
-    border-left: 2px solid #e8eced;
-    height: 100%;
-    margin-left: 11%;
-    margin-top: 17%;
-    position: absolute;
 
-}
-.textauthor {
+.textbox .textauthor {
+    font-family: 'Proximanova-regular', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #8f8f8f;
     text-transform: uppercase;
-    font-size: 28px;
+
 }
 .textbox h1 {
+    font-family: 'FuturaPTHeavy', serif;
     font-size: 78px;
+    line-height: 78px;
     text-transform: uppercase;
     color: #2a2a2a;
+    padding-bottom: 20px;
 }
 .textbox h3 {
+    font-family: 'Georgia', serif;
     color: #8f8f8f;
     font-size: 30px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: normal;
+    padding-bottom: 40px;
 }
 .textbox p {
     padding: 20px 0 20px;
+    font-size: 27px;
 }
 .textbox p.second {
     padding-bottom: 40px;
 }
+.textbox span {
+    font-style: italic;
+}
 .maintext {
-    font-family: Georgia;
+    font-family: 'Georgia', serif;
     font-size: 27px;
     color: black;
 }
