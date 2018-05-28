@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: bisque;
+}
+/*Работает и без клеарфикса, но ставим по правилам хорошего тона*/
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+header {
+    padding-top: 30px;
+}
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+
+}
+.margineer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.maincontainer {
+    width: 80vh;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid lightgray;
+}
+.rowblack, .rowwhite {
+    width: 100%;
+    height: 12.5%;
+}
+.block {
+    float: left;
+    height: 100%;
+    width: 12.5%;
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+.checker {
+    width: 100%;
+    height: 100%;
+    border: 4px solid lemonchiffon;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.maincontainer .firstplayer .checker {
+    background-color: brown;
+    visibility: hidden;
+}
+.maincontainer .secondplayer .checker {
+    background-color: darkcyan;
+    visibility: hidden;
+}
+.rowblack div:first-child {
+    background-color: black;
+}
+.rowblack div:first-child .checker{
+    visibility: visible;
+}
+.rowblack div:nth-child(2n) {
+    background-color: white;
+}
+.rowblack div:nth-child(2n+1) {
+    background-color: black;
+}
+.rowblack div:nth-child(2n+1) .checker{
+    visibility: visible;
+}
+.rowwhite div:first-child {
+    background-color: white;
+}
+.rowwhite div:nth-child(2n) {
+    background-color: black;
+}
+.rowwhite div:nth-child(2n) .checker{
+    visibility: visible;
+}
+.rowwhite div:nth-child(2n+1) {
+    background-color: white;
+}
