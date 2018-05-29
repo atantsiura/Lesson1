@@ -35,11 +35,9 @@ div.maincontainer {
 div.vertline {
     border-left: 2px solid #e8eced;
     position: absolute;
-    top: 150px;
+    top: 0;
     bottom: 0;
-
-    left: 11%;
-    overflow: hidden;
+    left: 6.5%;
 }
 div.header {
     display: block;
@@ -47,6 +45,7 @@ div.header {
     padding-left: 27%;
     width: 100%; /*почему без этого значение ширина обрезается по контенку не смотря на дисплей-блок*/
     position: absolute;
+
 
 }
 .title {
@@ -94,6 +93,8 @@ div.imageline {
     padding-top: 200px;
     background-color: #ffffff;
     /*padding-bottom: 40px;*/
+    position: relative;
+    z-index: -1;
 }
 
 .textbox .textauthor {

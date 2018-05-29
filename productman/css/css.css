@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, html {
+    height: 100%;
+}
+body {
+    background-image: url("../img/background.jpg");
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*font-family: 'Raleway', sans-serif;*/
+
+.margineer {
+    padding: 50px 10% 30px;
+}
+header h2 {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+
+}
+div.headerlinks {
+    float: right;
+    padding-top: 15px;
+}
+.headerlinks a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-left: 40px;
+    color: black;
+
+}
+section.productinfo {
+    display: flex;
+    justify-content: flex-end;
+
+}
