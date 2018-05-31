@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Productman</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
+
 
 </head>
 <body>
@@ -23,17 +26,67 @@
                 <a href="#">Recent Work</a>
             </div>
         </header>
-        <section class="productinfo clearfix">
-            <div class="floatright">
-                <h1>Black&White</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                <a href="#">View Project</a>
+        <section class="productinfo">
+            <div class="productflexbox">
+                <div class="info">
+                    <h1>Black& White</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="floatright">
+                    <img class="productimg" src="img/beatsblack.jpg" alt="DrDre IBeats Black"/>
+                </div>
             </div>
-            <div class="floatright">
-                <img class="productimg" src="img/beatsblack.jpg" alt="DrDre IBeats Black"/>
+            <div class="dot">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </section>
+        <section class="featuredproduct">
+            <h1>Featured Product</h1>
+            <p class="imgfont"></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. </p>
+            <div class="fproductflex" >
+                <div class="bigimg">
+                    <img src="img/beatswhite.jpg" alt="BeatsWhite"/></div>
+                <div class="smallimg">
+                    <img src="img/beatsred.jpg" alt="BeatsRed"/></div>
+                <div class="smallimg">
+                    <img src="img/miband.jpg" alt="MiBand"/></div>
+                <div class="smallimg">
+                    <img src="img/shoesbrown.jpg" alt="ShoesBrown"/></div>
+                <div class="smallimg">
+                    <img src="img/chair.jpg" alt="Chair"/>
+                </div>
+            </div>
+        </section>
+        <section class="prodnews">
+            <h1>Productman news</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. </p>
+            <form action="#" method="get" name="newssubscribe">
+                <input type="email" name="emeil" placeholder="✉ Enter your emeil address">
+                <button name="submit">Subscribe</button>
+            </form>
+        </section>
+        <footer>
+            <a href="https://www.facebook.com" >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-envelope-open"></i>
+            </a>
+        </footer>
+
     </div>
 </body>
 </html>

@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 body, html {
     height: 100%;
@@ -16,7 +18,11 @@ body {
 /*font-family: 'Raleway', sans-serif;*/
 
 .margineer {
-    padding: 50px 10% 30px;
+    padding: 50px 0 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 header h2 {
     float: left;
@@ -35,8 +41,122 @@ div.headerlinks {
     color: black;
 
 }
-section.productinfo {
+div.productflexbox {
     display: flex;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
+    align-items: flex-start;
+    padding-top: 105px;
+}
+.info {
+    text-align: right;
+    padding-right: 70px;
+}
+.info h1 {
+    padding-bottom: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    margin: 0;
 
+}
+.info p {
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #969696;
+}
+.info a {
+    color: #e10011;
+}
+.floatright {
+    width: 36%;
+}
+.productinfo img{
+    padding-right: 70px;
+}
+.dot {
+    text-align: center;
+    padding: 100px 0 100px;
+}
+.dot div {
+    display: inline-block;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 0 solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.dot div:hover {
+    background-color: #e10011;
+}
+.featuredproduct {
+    padding-top: 100px;
+    background-color: white;
+    text-align: center;
+}
+.fproductflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.fproductflex div {
+    margin-bottom: 35px;
+}
+.prodnews {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 0;
+}
+.prodnews h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.prodnews p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.prodnews input {
+    width: 41%;
+    font-size: 18px;
+    height: 70px;
+    padding-left: 30px;
+    border: 0 solid white;
+    border-radius: 35px 0 0 35px;
+}
+.prodnews button {
+    width: 17.5%;
+    height: 70px;
+    border: 0 solid red;
+    border-radius: 0 35px 35px 0;
+    background-color: #e10011;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-right: 30px;
+}
+footer {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 34px;
+    text-decoration: none;
+}
+footer a {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    padding-top: 19px;
+    margin-right: 25px;
+    border: 0 solid white;
+    border-radius: 50%;
+    background-color: white;
+    color: #979797;
 }
