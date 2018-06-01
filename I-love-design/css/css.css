@@ -1,8 +1,24 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url('../fonts/SegoeUIRegular.eot') format('eot'),
+    url("../fonts/SegoeUIRegular.woff") format("woff"),
+    url('../fonts/SegoeUIRegular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url('../fonts/SegoeUIBold.eot') format('eot'),
+    url("../fonts/SegoeUIBold.woff") format("woff"),
+    url('../fonts/SegoeUIBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI','Arial',sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 .vertpadding {
     padding-top: 80px;
@@ -15,12 +31,12 @@
 .logo img{
     width: 50px;
 }
-h1 {
+h2 {
+    font-family: "Segoe UI Bold", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 80px;
-    font-weight: bold;
 }
-header h1 {
+header h2 {
     padding-top: 21vh;
 }
 header p {
@@ -29,15 +45,17 @@ header p {
     font-size: 18px;
 }
 header a.link {
-    padding: 4px;
+    padding: 6px 8px;
     border: 2px solid #ceced0;
     border-radius: 50%;
 }
 header a.link img {
+    display: inline-block;
     width: 12px;
+    height: 12px;
 }
 .mainpart {
-    background-color: white;
+    background: url("../img/bgwhite.jpg");
     color: #464b4f;
 
 }
@@ -55,6 +73,9 @@ div.texbox {
 }
 
 .mainpart h1 {
+    font-family: "Segoe UI Bold", Arial, sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
     padding-bottom: 100px;
     text-align: center;
 }
@@ -73,12 +94,16 @@ p.miniheader {
     width: 33%;
     text-transform: uppercase;
     padding-bottom: 35px;
+    font-family: "Segoe UI Bold", Arial, sans-serif;
     font-size: 18px;
-    font-weight: bold;
     color: #464b4f;
 }
 p.footertextblock {
-    width: 33%;
+    width: 31%;
     font-size: 18px;
+    margin-right: 2.3%;
+    vertical-align: top;
+
+
 }
 
