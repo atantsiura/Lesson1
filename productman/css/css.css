@@ -120,6 +120,51 @@ div.productflexbox {
 }
 .fproductflex div {
     margin-bottom: 35px;
+    height: 390px;
+}
+.fproductflex img {
+    display: block;
+}
+.bigimg {
+    position: relative;
+}
+.smallimg {
+    position: relative;
+}
+/*.bigimg img {*/
+    /*display: block;*/
+    /*max-width: 694px;*/
+/*}*/
+.smallimg img {
+    display: block;
+    max-width: 330px;
+}
+.redcover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e10011;
+    opacity: 0;
+}
+.redcover:hover {
+    opacity: 1;
+}
+.redcover div {
+    position: absolute;
+    top: 260px;
+    color: white;
+    text-align: left;
+}
+.redcover div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-left: 35px;
+}
+.redcover div p:last-child {
+    display: inline-block;
+    border-bottom: 2px solid white;
 }
 .prodnews {
     padding-top: 100px;

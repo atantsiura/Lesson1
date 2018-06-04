@@ -28,7 +28,11 @@
     height: 100vh;
     color: white;
 }
+a.logo {
+display: inline-block;
+}
 .logo img{
+    display: inline-block;
     width: 50px;
 }
 h2 {
@@ -36,10 +40,14 @@ h2 {
     text-transform: uppercase;
     font-size: 80px;
 }
+.toppart p {
+    max-width: 425px;
+}
 header h2 {
     padding-top: 21vh;
 }
 header p {
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 21vh;
     font-size: 18px;
@@ -61,7 +69,7 @@ header a.link img {
 }
 /*боковые отступы через width+margin auto*/
 div.texbox {
-    width: 46%;
+    width: 92%;
     margin-left: auto;
     margin-right: auto;
     padding: 125px 0 125px;
@@ -80,11 +88,14 @@ div.texbox {
     text-align: center;
 }
 /*боковые отступы через padding*/
-footer {
-    padding: 0 25% 125px 25%;
+section {
+    padding: 0 25% 0 25%;
 }
-footer p {
+section p {
     display: inline-block;
+}
+section.footer {
+    padding-bottom: 125px;
 }
 div.position {
     font-size: 0;
@@ -103,7 +114,5 @@ p.footertextblock {
     font-size: 18px;
     margin-right: 2.3%;
     vertical-align: top;
-
-
 }
 
