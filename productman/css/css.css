@@ -126,18 +126,27 @@ div.productflexbox {
     display: block;
 }
 .bigimg {
-    position: relative;
+    width: 65%;
 }
 .smallimg {
+    width: 31%;
+}
+.imgholder{
     position: relative;
+    height: 387px;
 }
 /*.bigimg img {*/
     /*display: block;*/
     /*max-width: 694px;*/
 /*}*/
-.smallimg img {
+.imgholder img {
     display: block;
-    max-width: 330px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*height: 361px;*/
 }
 .redcover {
     position: absolute;
