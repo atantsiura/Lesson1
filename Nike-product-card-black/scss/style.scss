@@ -2,6 +2,11 @@
   box-sizing: border-box;
   border: 0;
   margin: 0;
+ }
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 body {
   background: url("/img/bgmain2.jpg");

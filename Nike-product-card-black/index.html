@@ -3,18 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Nike Product Card</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
+
 </head>
 <body>
 <div class="cardholder">
     <div class="shoecard">
-        <p>
-            Nike SB Stefan Janoski Max
-        </p>
-        <p>
+        <div class="floatholder clearfix">
+            <div class="floatleft">
+                <div class="nikelogo">
+                    <img src="img/logo.png"/>
+                </div>
+                <div class="shoeimage">
+                    <img src="img/Nike-SB-Stefan-Janoski-Max.png"/>
+                </div>
+            </div>
 
-        </p>
+            <div class="floatright">
+                <div class="textbox">
+                    <h1>
+                        Nike SB Stefan Janoski Max
+                    </h1>
+                    <p>Unisex skateboarding shoe</p>
+                </div>
+                <div class="stars">
+                    <img src="img/3stars.png"/>
+                    <img src="img/whitestar.png"/>
+                    <img src="img/whitestar.png"/>
+                </div>
+                <div class="formholder">
+                    <form action="#" method="get" name="orderform">
+                        <select name="size">
+                            <option value="size" selected>Size</option>
+                            <option value="6">US6</option>
+                        </select>
+                        <select name="quantity">
+                            <option value="Qty" selected>Qty</option>
+                            <option value="1">1</option>
+                        </select>
+                        <button type="submit" name="Addtocard">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="round">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
     </div>
 </div>
 

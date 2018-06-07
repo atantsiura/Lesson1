@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "MuseoSansRounded";
+    src: url("../fonts/museosansrounded-100-webfont.woff") format("woff"),
+    url('../fonts/museosansrounded-100-webfont.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    font-family: 'MuseoSansRounded', Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #282828;
+}
+img {
+    display: block;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.cardholder {
+    background: url("../img/bgmain2.jpg") no-repeat;
+    max-width: 800px;
+    padding: 100px 50px 100px 60px;
+}
+.shoecard {
+    background-color: #111a28;
+}
+.floatleft {
+    float: left;
+    width: 65%;
+}
+
+.nikelogo {
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 90px;
+}
+.nikelogo img {
+    max-width: 100%;
+}
+.shoeimage {
+    width: 83%;
+    padding-top: 65px;
+    padding-left: 35px;
+}
+.shoeimage img {
+    width: 100%;
+}
+.floatright {
+    float: right;
+    width: 35%;
+    padding-top: 75px;
+    font-size: 0;
+}
+.textbox {
+    text-transform: capitalize;
+
+}
+.textbox h1 {
+    width: 80%;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #e1e1e1;
+}
+.textbox p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #575d66;
+    padding-bottom: 25px;
+}
+.stars img {
+    display: inline-block;
+}
+.stars {
+    padding-bottom: 30px;
+    /*width: 30%;*/
+}
+.formholder {
+    font-size: 14px;
+    color: #575d66;
+
+}
+/*Ширина 687*/
+
+.formholder select {
+    width: 70px;
+    height: 32px;
+    padding-left: 12px;
+    border: 1px solid #575d66;
+    background-color: #111a28;
+    margin-bottom: 29px;
+}
+.formholder button {
+    width: 76%;
+    height: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #575d66;
+    background-color: #111a28;
+    text-align: center;
+}
+.round {
+    padding-left: 25%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.round div{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0px solid #111a28;
+
+    margin-right: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+.round div:first-child {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1f273f;
+    background-color: #7e838b;
+}
+.round div:nth-child(2){
+    position: absolute;
+    top: 3px;
+}
+.round div:nth-child(3){
+    position: absolute;
+    top: 3px;
+    left: calc(25% + 40px);
+    background-color: #ed3333;
+}
+.round div:nth-child(4){
+    position: absolute;
+    top: 3px;
+    left: calc(25% + 57px);
+    background-color: #29e3ea;
+}
