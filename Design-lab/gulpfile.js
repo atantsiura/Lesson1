@@ -24,7 +24,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('style', function() {
-    return gulp.src('scss/main.scss', {style : 'expended'})
+    return gulp.src('scss/style.scss', {style : 'expended'})
         .pipe(sass({includePaths: ['sass/**']}))
         .pipe(rename({suffix: '.min'}))
         .pipe(minify())

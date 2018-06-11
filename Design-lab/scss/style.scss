@@ -1,0 +1,171 @@
+@import "normalize";
+@import "mixin";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+//body, html {
+//  height: 100%;
+//}
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px/1.5;
+  color: #3c3c3c;
+}
+a {
+  display: inline-block;
+}
+img {
+  display: block;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+h2 {
+  font-size: 34px;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  min-height: 100vh;
+  padding: 284px 0 384px;
+  position: relative;
+  background: #abb5c9 url("../img/bg-header.jpg") 50% no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  color: white;
+
+  .container {
+    max-width: 600px;
+  }
+
+  .logo {
+    margin-bottom: 80px;
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  h1 {
+    padding-bottom: 35px;
+    margin: 0;
+    font-size: 54px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 2;
+  }
+  .link {
+    position: absolute;
+    left: 50%;
+    bottom: 115px;
+    margin-left: -12px;
+    &hover {
+      opacity: 0.6;
+    }
+  }
+
+  .link img {
+    width: 23px;
+    height: 37px;
+  }
+}
+/*section about*/
+
+.subcontainer {
+  position: relative;
+  margin-top: 120px;
+  border: 2px solid #3c3c3c;
+  padding: 70px 180px 30px;
+}
+
+.about {
+  background-color: white;
+  padding: 160px 0;
+
+  .subcontainer {
+    h2 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 0px;
+      left: 50%;
+      width: 48%;
+      margin: 0;
+      background-color: white;
+    }
+
+    p {
+      padding-bottom: 30px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/*services */
+.services {
+  background: #adb8cd url("../img/bg-services.jpg") 50% no-repeat;
+  background-size: cover;
+  color: white;
+
+  .container {
+    padding-top: 128px;
+    padding-bottom: 108px;
+
+    .subcontainer {
+      border-color: white;
+      border-width: 0 2px 2px;
+      margin-top: 0;
+
+      &:before {
+         position: absolute;
+         top: 0;
+         left: 0;
+         display: block;
+         content: "";
+         height: 2px;
+         background-color: white;
+         width: 26%;
+       }
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: white;
+        width: 26%;
+      }
+
+      h2 {
+        display: block;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 0;
+        left: 12%;
+        width: 76%;
+        text-align: center;
+        margin: 0;
+      }
+
+    }
+  }
+}
+
+
