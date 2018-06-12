@@ -163,9 +163,133 @@ header {
         text-align: center;
         margin: 0;
       }
+    }
+  }
+}
+/*section what we do, top borders whit easier way*/
+.whatwedo {
+  background-color: white;
+  .container {
+    padding-bottom: 115px;
 
+    .subcontainer {
+      padding-top: 120px;
+      padding-bottom: 90px;
+
+      h2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 0px;
+        left: 50%;
+        width: 48%;
+        margin: 0;
+        background-color: white;
+      }
+
+      img {
+        display: inline-block;
+        margin-bottom: 35px;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-bottom: 100px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
 
+/* section imagegrid, gallery on flex*/
 
+.imagegrid {
+  .flexholder {
+    width: 100vw;
+    max-width: 1920px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    div {
+      padding-right: 10px;
+      &:last-child {
+        padding-right: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/*section contuct us. top borders whit easier way*/
+
+.contactus {
+  .container {
+    background-color: white;
+    .subcontainer {
+      margin-top: 75px;
+      padding-bottom: 50px;
+
+      h2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 0px;
+        left: 50%;
+        width: 48%;
+        margin: 0;
+        background-color: white;
+      }
+
+      p {
+        padding-bottom: 45px;
+      }
+
+      button {
+        height: 40px;
+        width: 44%;
+        max-width: 400px;
+        border: 0;
+        background-color: #3c3c3c;
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+
+      }
+    }
+  }
+}
+/*footer */
+footer {
+  .container {
+    padding: 60px 0 65px;
+
+    .flex {
+      display: flex;
+      justify-content: center;
+
+      img {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+      span {
+        display: block;
+        padding: 12px 0 12px 30px;
+        font-size: 14px;
+      }
+    }
+  }
+
+
+}
