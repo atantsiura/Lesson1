@@ -1,0 +1,74 @@
+@font-face {
+    font-family:"Miso";src:url("../fonts/miso.eot") format("eot"),
+    url("../fonts/miso.woff") format("woff"),url("../fonts/miso.ttf") format("truetype"),
+    url("../fonts/miso.svg#Miso") format("svg");font-weight:normal;font-style:normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #282828;
+    font-family: 'Miso', Arial, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #fdde7e;
+    display: flex;
+    justify-content: space-between;
+}
+div.coupplan {
+    min-height: 442px;
+    width: 33.33%;
+    max-width: 360px;
+    padding: 0 8.3%;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    margin-left: 2.5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px #d3b969;
+    background-color: white;
+    text-align: center;
+
+
+}
+div.coupplan:last-child {
+    margin-right: 2.5%;
+}
+div.coupplan:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.coupplan h2 {
+    font-size: 56px;
+    color: #333333;
+    margin: 30px 0;
+}
+
+.coupplan p.price {
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #02995b;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.coupplan p {
+    font-size: 22px;
+    color: #9f9f9f;
+    margin-bottom: 40px;
+}
