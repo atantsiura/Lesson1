@@ -1,0 +1,99 @@
+@import "variables";
+@import "mixin";
+@import "normalize";
+
+@font-face {
+  font-family:"HansKendrick";
+  src: url("../fonts/HansKendrick-Regular.otf") format("otf")
+}
+
+* {
+  font-family: "HansKendrick", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+h1,h2,h3,h4 {
+  margin: 0;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@include grid(10px);
+
+h1 {
+  font-size: 30px;
+  color: white;
+  margin-left: $newsleftpadding;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 30px;
+  color: black;
+  margin-left: $newsleftpadding;
+
+}
+
+main {
+  background-color: #e2e7ec;
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 90px 0 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+
+    .pudlishing-date {
+      color: #d4d5d5;
+      font-size: 13px;
+      padding: 30px 0 20px;
+      margin-left: $newsleftpadding;
+    }
+
+    .authorface {
+      display: inline-block;
+      width: 57px;
+      //margin-top: 55px;
+      //margin-bottom: 25px;
+      //margin-left: $newsleftpadding;
+      position: absolute;
+      left: 29px;
+      bottom: 25px;
+    }
+
+    .main-news {
+      height: 540px;
+      position: relative;
+
+      .gradient {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom, transparent, black);
+        opacity: 0.95;
+      }
+      .pos {
+        position: absolute;
+        left: 40px - $newsleftpadding;
+        bottom: 40px;
+      }
+    }
+
+    .news-holder {
+      background-color: white;
+      position: relative;
+      height: 540px;
+
+    }
+    .paddingmaker {
+      padding-left: 29px;
+    }
+
+  }
+}
