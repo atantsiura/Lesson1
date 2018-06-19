@@ -1,7 +1,7 @@
 {
-  "name": "nike-pc-black",
+  "name": "blog-grid",
   "version": "1.0.0",
-  "description": "Payment Form",
+  "description": "Blog Grid",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,7 @@
     "gulp-clean-css": "^3.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.0",
     "gulp-uglify": "^3.0.0",

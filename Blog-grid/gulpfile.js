@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     minify = require('gulp-clean-css'),
     sass = require('gulp-sass'),
+    plumber = require('gulp-plumber'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     // uglify = require('gulp-uglify'),
@@ -25,6 +26,7 @@ gulp.task('watch', function() {
 
 gulp.task('style', function() {
     return gulp.src('scss/style.scss', {style : 'expended'})
+        .pipe(plumber())
         .pipe(sass({includePaths: ['sass/**']}))
         .pipe(rename({suffix: '.min'}))
         .pipe(minify())
