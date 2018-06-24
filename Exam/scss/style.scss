@@ -1,0 +1,448 @@
+@import "variables";
+@import "mixin";
+@import "normalize";
+
+@font-face {
+  font-family: Aleo Regular;
+  src: url('../fonts/Aleo-Regular.eot');
+  src: url('../fonts/Aleo-Regular.otf') format('otf'),
+  url("../fonts/Aleo-Regular.svg") format("svg"),
+  url("../fonts/Aleo-Regular.ttf") format("truetype"),
+  url("../fonts/Aleo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Josefin Sans, Arial, sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 16px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+h1,h2,h3,h4 {
+  font-weight: normal;
+  margin: 0;
+  font-family: Josefin Sans, Arial, sans-serif;
+}
+h2 {
+  font-size: 32px;
+  font-family: Aleo Regular, Arial, sans-serif;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  //border: 15px solid white
+  border-width: 0 15px;
+  border-color: white;
+  border-style: solid;
+
+}
+
+.margincontainer {
+  max-width: 1150px;
+  padding: 0 20px 0;
+  margin: 0 auto;
+}
+/* header part syles*/
+
+header {
+  position: relative;
+  //height: 100vh;
+  border-top: 15px solid white;
+  background: #04102a url("../img/bg1.jpg") center no-repeat;
+
+  .headercontainer {
+    //padding-top: 260px;
+    height: 100vh;
+    //border-top: 15px solid white;
+    padding-top: 20%;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 80px;
+
+    h1 {
+      padding-bottom: 30px;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+
+    .h1linked {
+      padding-bottom: 50px;
+      font-size: 22px;
+      letter-spacing: 0.31rem;
+      //color: #cddceb;
+    }
+
+    form {
+      margin-bottom: 10%;
+      font-size: 0;
+
+      .formholder {
+        display: inline-block;
+        width: 58%;
+        background-color: white;
+
+        input {
+          width: 75.5%;
+          display: inline-block;
+          line-height: 60px;
+          margin: 0;
+          font-size: 14px;
+          border: none;
+          outline: none;
+          text-align: center;
+        }
+
+        button {
+          display: inline-block;
+          line-height: 59px;
+          width: 23%;
+          font-size: 14px;
+          border: none;
+          background-color: #5474fd;
+          outline: none;
+          text-transform: uppercase;
+
+          img {
+            display: inline-block;
+            width: 25px;
+            transform: translateY(25%);
+          }
+        }
+      }
+
+
+    }
+
+    .link {
+
+      p {
+        padding-bottom: 10px;
+        font-size: 14px;
+        //color: #cddceb;
+      }
+    }
+  }
+
+  div.navmenu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #5474fd;
+
+    p {
+      display: inline-block;
+      float: left;
+      font-size: 24px;
+      line-height: 80px;
+
+    }
+
+    ul {
+      float: right;
+
+      li {
+        display: inline-block;
+        padding-left: 40px;
+        line-height: 80px;
+
+        a {
+          color: white;
+          font-size: 14px;
+
+        }
+      }
+    }
+  }
+}
+
+/*Second section Why choose us styles*/
+
+section.why-choose-us {
+
+  .mainpart {
+    background: #453a36 url("../img/bg2.jpg") center no-repeat;
+
+    .flexholder {
+      padding: 120px 0;
+      display: flex;
+      justify-content: space-between;
+
+      .flexitem {
+        width: 48.7%;
+
+        h2 {
+          padding-top: 85px;
+          padding-bottom: 70px;
+        }
+
+        p {
+          font-size: 16px;
+          padding-bottom: 25px;
+          color: #bdbab9;
+          line-height: 26px;
+
+          &:last-child {
+            padding-bottom: 45px;
+          }
+        }
+
+        div.imageholder {
+
+          &:first-child {
+            padding-right: 55px;
+          }
+          &:last-child {
+            img {
+              float: right;
+            }
+          }
+        }
+
+        a {
+          display: block;
+          width: 220px;
+          line-height: 60px;
+          background-color: #5474fd;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+      }
+    }
+
+  }
+
+  .bottompart {
+    background-color: #333333;
+    position: relative;
+
+    .waveline {
+      max-width: 682px;
+      //width: 61%;
+      //height: 50px;
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+
+    }
+
+    div.flexholder {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 85px;
+      padding-bottom: 115px;
+
+      .flexitem {
+        width: 25%;
+        text-align: center;
+
+        .iconwrapper {
+          position: relative;
+          height: 85px;
+
+        }
+
+        img {
+          position: absolute;
+          width: 65px;
+          background-color: #333333;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+
+        }
+
+        p {
+          font-size: 36px;
+          letter-spacing: 0;
+          text-transform: capitalize;
+          font-family: Aleo Regular, Arial, sans-serif;
+        }
+      }
+    }
+
+  }
+
+}
+
+/* Section Places, consisitng of two parts. Styles:*/
+
+section.places {
+  background-color: indigo;
+
+  .margincontainer {
+    padding-top: 230px;
+    padding-bottom: 100px;
+  }
+  .bookinginfo {
+    padding: 50px 30px;
+    width: 47.8%;
+    background-color: rgba(35, 33, 33, 0.85);
+
+    p.country {
+      font-size: 20px;
+      letter-spacing: 0.075rem;
+      padding: 0;
+    }
+
+    h3 {
+      padding: 30px 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #c3c2c1;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 50px;
+      line-height: 26px;
+      color: #c3c2c1;
+      letter-spacing: 0;
+
+    }
+
+    button {
+      display: block;
+      width: 220px;
+      line-height: 60px;
+      text-transform: uppercase;
+      background-color: #5474fd;
+      border: none;
+    }
+  }
+
+  div.first-part {
+    background: #a39db7 url("../img/bg3.jpg") center no-repeat;
+    background-size: cover;
+
+
+  }
+
+  div.second-part {
+    background: #db562f url("../img/bg4.jpg") center no-repeat;
+    background-size: cover;
+
+    .bookinginfo {
+      //width: 47.8%;
+      float: right;
+    }
+  }
+}
+
+/* Sectrion Reviews. Styles*/
+
+section.reviews {
+  background: #2c2e2e url("../img/bg5.jpg") no-repeat center;
+  background-size: cover;
+
+  .margincontainer {
+
+    h2 {
+      padding: 120px 0 100px;
+      text-align: center;
+      font-size: 32px;
+      text-transform: capitalize;
+    }
+
+
+    .flexholder {
+      display: flex;
+      padding-bottom: 200px;
+      color: #d5d5d5;
+
+      .flexitem {
+        width: 40%;
+        background-color: #333333;
+
+        &:last-child {
+          width: 60%;
+          padding: 50px 60px;
+
+          h3 {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-bottom: 35px;
+          }
+
+          p.relativepos {
+            position: relative;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 26px;
+
+            span {
+              color: #506be2;
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer styles. */
+
+footer {
+  background-color: #232323;
+  padding-top: 120px;
+  border-bottom: 15px solid white;
+  text-align: center;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+
+  p {
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    color: #a7a7a7;
+  }
+
+  .linkholder {
+    padding-bottom: 50px;
+
+    a {
+      margin-right: 20px;
+
+      &:nth-child(3) {
+
+        i {
+          color: #516fee;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+
+}

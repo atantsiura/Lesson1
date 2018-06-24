@@ -74,7 +74,7 @@ header {
     left: 50%;
     bottom: 115px;
     margin-left: -12px;
-    &hover {
+    &:hover {
       opacity: 0.6;
     }
   }
@@ -101,7 +101,7 @@ header {
     h2 {
       position: absolute;
       transform: translate(-50%, -50%);
-      top: 0px;
+      top: 0;
       left: 50%;
       width: 48%;
       margin: 0;
@@ -179,7 +179,7 @@ header {
       h2 {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 0px;
+        top: 0;
         left: 50%;
         width: 48%;
         margin: 0;
@@ -232,7 +232,7 @@ header {
   }
 }
 
-/*section contuct us. top borders whit easier way*/
+/*section contact us. top borders whit easier way*/
 
 .contactus {
   .container {
@@ -244,7 +244,7 @@ header {
       h2 {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 0px;
+        top: 0;
         left: 50%;
         width: 48%;
         margin: 0;
