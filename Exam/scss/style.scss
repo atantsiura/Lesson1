@@ -20,7 +20,7 @@
   font-family: Josefin Sans, Arial, sans-serif;
   letter-spacing: 0.1rem;
   font-size: 16px;
-  color: white;
+  color: $maintextcolor;
 }
 
 ul {
@@ -48,13 +48,23 @@ a {
   display: table;
   clear: both;
 }
+/*side borders for the whole document*/
 
 body {
-  //border: 15px solid white
   border-width: 0 15px;
   border-color: white;
   border-style: solid;
 
+}
+
+button {
+  text-transform: uppercase;
+  background-color: $buttoncolor;
+  font-family: Aleo Regular, Arial, sans-serif;
+  &:hover {
+    color: $hovecolor;
+    font-weight: bold;
+  }
 }
 
 .margincontainer {
@@ -62,25 +72,23 @@ body {
   padding: 0 20px 0;
   margin: 0 auto;
 }
-/* header part syles*/
+/* Header part styles. Header with 100vh on full screen*/
 
 header {
   position: relative;
-  //height: 100vh;
+  height: 100vh;
   border-top: 15px solid white;
   background: #04102a url("../img/bg1.jpg") center no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
 
   .headercontainer {
-    //padding-top: 260px;
-    height: 100vh;
-    //border-top: 15px solid white;
-    padding-top: 20%;
+    padding-top: 30vh;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 80px;
 
     h1 {
-      padding-bottom: 30px;
+      padding-bottom: 10px;
       text-transform: uppercase;
       font-size: 48px;
     }
@@ -88,49 +96,49 @@ header {
     .h1linked {
       padding-bottom: 50px;
       font-size: 22px;
-      letter-spacing: 0.31rem;
-      //color: #cddceb;
+      letter-spacing: 0.29rem;
     }
 
     form {
-      margin-bottom: 10%;
-      font-size: 0;
+      margin-bottom: 12vh;
+
+      /*getting inline blocks together with fonsize 0 and margin -, getting the equal size with border*/
 
       .formholder {
-        display: inline-block;
-        width: 58%;
-        background-color: white;
+        font-size: 0;
+
+        /*used width in % for more flexibility*/
 
         input {
-          width: 75.5%;
+          width: 41%;
           display: inline-block;
           line-height: 60px;
-          margin: 0;
           font-size: 14px;
-          border: none;
           outline: none;
           text-align: center;
+          background-color: white;
+          margin-right: -2px;
+          border: none;
+          border-top: 2px solid white;
         }
 
         button {
           display: inline-block;
-          line-height: 59px;
-          width: 23%;
+          line-height: 58px;
+          border: 2px solid white;
+          width: 12%;
           font-size: 14px;
-          border: none;
-          background-color: #5474fd;
           outline: none;
-          text-transform: uppercase;
+          margin-top: 2px;
 
           img {
             display: inline-block;
-            width: 25px;
-            transform: translateY(25%);
+            width: 23px;
+            transform: translate(25%, 25%);
+
           }
         }
       }
-
-
     }
 
     .link {
@@ -138,7 +146,6 @@ header {
       p {
         padding-bottom: 10px;
         font-size: 14px;
-        //color: #cddceb;
       }
     }
   }
@@ -167,9 +174,11 @@ header {
         line-height: 80px;
 
         a {
-          color: white;
+          color: $maintextcolor;
           font-size: 14px;
-
+          &:hover {
+            color: $hovecolor;
+          }
         }
       }
     }
@@ -182,11 +191,14 @@ section.why-choose-us {
 
   .mainpart {
     background: #453a36 url("../img/bg2.jpg") center no-repeat;
+    background-size: cover;
 
     .flexholder {
       padding: 120px 0;
-      display: flex;
-      justify-content: space-between;
+      @include flexbox();
+      @include justify-content(space-between);
+      //display: flex;
+      //justify-content: space-between;
 
       .flexitem {
         width: 48.7%;
@@ -223,14 +235,13 @@ section.why-choose-us {
           display: block;
           width: 220px;
           line-height: 60px;
-          background-color: #5474fd;
+          background-color: $buttoncolor;
           text-align: center;
           text-transform: uppercase;
+          font-family: Aleo Regular, Arial, sans-serif;
         }
-
       }
     }
-
   }
 
   .bottompart {
@@ -239,21 +250,19 @@ section.why-choose-us {
 
     .waveline {
       max-width: 682px;
-      //width: 61%;
-      //height: 50px;
       position: absolute;
       top: 25px;
-      left: 50%;
+      left: 49.87%;
       transform: translateX(-50%);
       z-index: 1;
-
     }
 
     div.flexholder {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 85px;
-      padding-bottom: 115px;
+      @include flexbox();
+      @include justify-content(space-between);
+      //display: flex;
+      //justify-content: space-between;
+      padding: 95px 65px 115px;
 
       .flexitem {
         width: 25%;
@@ -262,18 +271,17 @@ section.why-choose-us {
         .iconwrapper {
           position: relative;
           height: 85px;
-
         }
 
         img {
           position: absolute;
           width: 65px;
           background-color: #333333;
+          border: 4px solid #333333;
           top: 0;
           left: 50%;
           transform: translateX(-50%);
           z-index: 2;
-
         }
 
         p {
@@ -284,15 +292,12 @@ section.why-choose-us {
         }
       }
     }
-
   }
-
 }
 
-/* Section Places, consisitng of two parts. Styles:*/
+/* Section Places, consisting of two parts. Styles:*/
 
 section.places {
-  background-color: indigo;
 
   .margincontainer {
     padding-top: 230px;
@@ -329,8 +334,6 @@ section.places {
       display: block;
       width: 220px;
       line-height: 60px;
-      text-transform: uppercase;
-      background-color: #5474fd;
       border: none;
     }
   }
@@ -338,8 +341,6 @@ section.places {
   div.first-part {
     background: #a39db7 url("../img/bg3.jpg") center no-repeat;
     background-size: cover;
-
-
   }
 
   div.second-part {
@@ -353,7 +354,7 @@ section.places {
   }
 }
 
-/* Sectrion Reviews. Styles*/
+/* Section Reviews. Styles*/
 
 section.reviews {
   background: #2c2e2e url("../img/bg5.jpg") no-repeat center;
@@ -368,9 +369,9 @@ section.reviews {
       text-transform: capitalize;
     }
 
-
     .flexholder {
-      display: flex;
+      @include flexbox();
+      //display: flex;
       padding-bottom: 200px;
       color: #d5d5d5;
 
@@ -385,18 +386,17 @@ section.reviews {
           h3 {
             font-size: 20px;
             text-transform: uppercase;
-            padding-bottom: 35px;
+            padding-bottom: 20px;
           }
 
           p.relativepos {
             position: relative;
             font-size: 14px;
             letter-spacing: 0;
-            line-height: 26px;
+            line-height: 25px;
 
-            span {
-              color: #506be2;
-              font-size: 32px;
+            &:before {
+              content: url("../img/cite.png");
             }
           }
         }
@@ -431,6 +431,11 @@ footer {
     a {
       margin-right: 20px;
 
+      i:hover{
+        color: $hovecolor;
+        font-weight: bold;
+      }
+
       &:nth-child(3) {
 
         i {
@@ -443,6 +448,4 @@ footer {
       }
     }
   }
-
-
 }
