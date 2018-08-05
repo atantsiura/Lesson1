@@ -5,126 +5,260 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-<section class="fresh-life">
-    <div class="container">
-        <nav class="clearfix">
-            <h1><a href="#">Cahee</a></h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <section class="fresh-life">
+        <div class="container">
+            <nav class="clearfix">
+                <h1><a href="#">Cahee</a></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-        <div class="content">
-            <h2>Fresh Life</h2>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            <div class="content">
+                <h2>Fresh Life</h2>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+                <button>GET FREE NOW</button>
+            </div>
+        </div>
+
+        <a class="scroll" href="#about">
+            <img src="img/scroll.png" alt="scroll">
+        </a>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container clearfix">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-buttons">
+                <div class="services-button">
+                    <a href="#">
+                        <p>Online Shopping</p>
+                        <div class="image-wrapper">
+                            <img src="img/icon-cart.png" alt="cart">
+                        </div>
+                    </a>
+                </div>
+                <div class="services-button">
+                    <a href="#">
+                        <p>Quality Product</p>
+                        <div class="image-wrapper">
+                            <img src="img/icon-plant.png" alt="cart">
+                        </div>
+                    </a>
+                </div>
+                <div class="services-button">
+                    <a href="#">
+                        <p>Domestic & International Delivery</p>
+                        <div class="image-wrapper">
+                            <img src="img/icon-world.png" alt="cart">
+                        </div>
+                    </a>
+                </div>
+                <div class="services-button">
+                    <a href="#">
+                        <p>Well Organized</p>
+                        <div class="image-wrapper">
+                            <img src="img/icon-carrot.png" alt="cart">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Our Services</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <button>GET FREE NOW</button>
+
+            <div class="my-grid-container">
+                <div class="my-grid-row">
+                    <div class="my-grid-cell-2-3">
+                        <img src="img/gallery-1.jpg" alt="gallery1">
+                    </div>
+                    <div class="my-grid-cell-1-3 small-grid">
+                        <div class="my-grid-row">
+                            <div class="my-grid-cell-1-1">
+                                <img src="img/gallery-2.jpg" alt="gallery2">
+                            </div>
+                        </div>
+                        <div class="my-grid-row">
+                            <div class="my-grid-cell-1-1">
+                                <img src="img/gallery-3.jpg" alt="gallery3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-grid-row">
+                    <div class="my-grid-cell-1-2">
+                        <img src="img/gallery-4.jpg" alt="gallery4">
+                    </div>
+                    <div class="my-grid-cell-1-2">
+                        <img src="img/gallery-5.jpg" alt="gallery5">
+                    </div>
+                </div>
+            </div>
+
+            <button>View more</button>
         </div>
-    </div>
+    </section>
 
-    <a class="scroll" href="#about">
-        <img src="img/scroll.png" alt="scroll">
-    </a>
-</section>
-
-<section id="about" class="about">
-    <div class="container clearfix">
-        <div class="content">
-            <h2>About Us</h2>
-            <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+    <section class="subscribe">
+        <div class="container">
+            <h3>Subscribe to us</h3>
+            <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam.
             </p>
-            <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+            <form class="clearfix">
+                <input type="email" placeholder="Your email address...">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
             </p>
-        </div>
-    </div>
-</section>
 
-<section class="services">
-    <div class="container">
-        <div>
-            <div class="services-button">
-                <a href="#">
-                    <p>Online Shopping</p>
-                    <div class="image-wrapper">
-                        <img src="img/icon-cart.png" alt="cart">
+            <div class="my-grid-container">
+                <div class="my-grid-row">
+                    <div class="my-grid-cell-1-3">
+                        <div class="blog-image-wrapper">
+                            <img src="img/blog-1.jpg" alt="blog1">
+                            <div class="overlay"></div>
+                            <div class="date">
+                                20<br>NOV
+                            </div>
+                            <div class="text">
+                                <p>Green Smoothies: Too Much of a Good Thing?</p>
+                                <p><small>By Auskteez - 2 hours ago</small></p>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="services-button">
-                <a href="#">
-                    <p>Quality Product</p>
-                    <div class="image-wrapper">
-                        <img src="img/icon-plant.png" alt="cart">
+
+                    <div class="my-grid-cell-1-3">
+                        <div class="blog-image-wrapper">
+                            <img src="img/blog-2.jpg" alt="blog2">
+                            <div class="overlay"></div>
+                            <div class="date">
+                                14<br>NOV
+                            </div>
+                            <div class="text">
+                                <p>Growing Food and a “Thirst” for Innovation</p>
+                                <p><small>By Auskteez - 3 hours ago</small></p>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="services-button">
-                <a href="#">
-                    <p>Domestic & International Delivery</p>
-                    <div class="image-wrapper">
-                        <img src="img/icon-world.png" alt="cart">
+
+                    <div class="my-grid-cell-1-3">
+                        <div class="blog-image-wrapper">
+                            <img src="img/blog-3.jpg" alt="blog3">
+                            <div class="overlay"></div>
+                            <div class="date">
+                                10<br>NOV
+                            </div>
+                            <div class="text">
+                                <p>Pesticides & Food: What You Need to Know</p>
+                                <p><small>By Auskteez - 6 hours ago</small></p>
+                            </div>
+                        </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="services-button">
-                <a href="#">
-                    <p>Well Organized</p>
-                    <div class="image-wrapper">
-                        <img src="img/icon-carrot.png" alt="cart">
+
+            <button>View more</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+
+            <div class="my-grid-container">
+                <div class="my-grid-row">
+                    <div class="my-grid-cell-1-2">
+                        <form>
+                            <input type="text" value="Auskteez Tran">
+                            <input type="email" placeholder="Your email...">
+                            <input type="text" placeholder="Your phone number...">
+                            <textarea placeholder="Your message..."></textarea>
+                        </form>
                     </div>
-                </a>
+
+                    <div class="my-grid-cell-1-2">
+                        <address>
+                            <p><b>ADDRESS</b></p>
+                            <p>123 City name, Street, City, Country</p>
+                            <p><b>EMAIL</b></p>
+                            <p>cahee@domain.com</p>
+                            <p><b>PHONE</b></p>
+                            <p>+012 345 6789</p>
+                        </address>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div>
-            <h2>Our Services</h2>
+    <footer>
+        <div class="container">
+            <div class="my-grid-container">
+                <div class="my-grid-row">
+                    <div class="my-grid-cell-1-3">
+                        <p>© 2015 Company. All right reserved.</p>
+                    </div>
+                    <div class="my-grid-cell-1-3">
+                        <p class="logo">Cahee</p>
+                    </div>
+                    <div class="my-grid-cell-1-3">
+                        <p class="author">Made with <span>love</span> by Auskteez</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<section class="gallery">
-    <div class="container">
-        <h2>Gallery</h2>
-        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-
-        <div class="grid-container">
-
-        </div>
-
-        <button>View more</button>
-    </div>
-</section>
-
-<section class="subscribe">
-    <div class="container">
-        <h3>Subscribe to us</h3>
-        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam.
-        </p>
-        <form>
-            <input type="text" placeholder="Your email address...">
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <p>© 2015 Company. All right reserved.</p>
-    <p class="logo">Cahee</p>
-    <p>Made with <span>love</span> by Auskteez</p>
-</footer>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
