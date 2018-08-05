@@ -12,10 +12,20 @@ $(document).ready(function () {
         }, 500);
     });
 
-    $('#slider').slick({
+    $('.slickslider').slick({
         autoplay: true,
-        arrows: false,
-        mobileFirst: true
+        infinite: true,
+        variableWidth: true,
+        arrows: true,
+        mobileFirst: true,
+        speed: 500,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        //fade: true,
+        //cssEase: 'linear',
+
+
     });
 
    // var $isotopeGrid = $('.portfolio-images');
